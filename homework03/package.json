@@ -1,0 +1,14 @@
+{
+  "name": "firstnode",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "task": "node task.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "fs-extra": "^11.3.0"
+  }
+}

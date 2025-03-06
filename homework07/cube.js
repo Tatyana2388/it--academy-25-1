@@ -11,10 +11,12 @@ for (let i = 0; i < playersCount; i++) {
 
 }
 
-const winner = results.indexOf(Math.max(...results));
+const maxResult = Math.max(...results);
+const onlyOneWinner = results.filter((res) => res === maxResult).length === 1;
 
-if (winner > -1) {
-    console.log(results);
+console.log(results);
+if (onlyOneWinner) {
+    const winner = results.indexOf(maxResult);
     console.log(`Победил игрок ${winner + 1}`);
 } else {
     console.log('Ничья')

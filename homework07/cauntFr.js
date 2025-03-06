@@ -1,13 +1,3 @@
-// function printElapsedTime(testFn) {
-//     const startTime = Date.now();
-//     const result = testFn();
-//     const endTime = Date.now();
-//
-//     console.log(`Elapsed time: ${String(endTime - startTime)} milliseconds`);
-//     return result;
-// }
-//
-// const yourFunctionReturn = printElapsedTime(yourFunction);
 function numberOfFriday13(startYear) {
     let count = 0;
     let currentDate = new Date();

@@ -9,11 +9,9 @@ describe('API test', () => {
     })
 
     it('should GET books {id} ', async () => {
-        console.log(responseGet);
         await expect(responseGet.status).to.equal(200);
     })
     it('should GET error with error incorrect url ', async () => {
-        console.log(responseGet);
         await expect(responseGet.status).to.equal(404);
     })
 });

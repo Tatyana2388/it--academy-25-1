@@ -10,12 +10,10 @@ describe('API test', () => {
     })
 
     it('should GET all the books', async () => {
-        console.log(responseDelete);
         await expect(responseDelete.status).to.equal(200);
     })
 
     it('should GET error with incorrect url', async () => {
-        console.log(responseDelete);
         await expect(responseDelete.status).to.equal(404);
     })
 

@@ -1,0 +1,22 @@
+xpath method:
+1  //*[@id="__next"]//*[@class="app"]//header[@class="sc-d6c9e5b8-0 dBUlMZ"]//*[@class="sc-d6c9e5b8-5 cYRsBO hide-when-no-script"]//button[contains(@class,"hGNtcn")]
+2  //*[@id="__next"]/*[@class="app"]//section[@class="sc-f116bf72-0 hkTqj"]/nav[@class="sc-f116bf72-1 xECcw"]
+3  //*[@id="main-content"]//*[@data-testid="first-grid"]//*[@data-testid="dundee-card"][1]//*[@data-testid="card-metadata-lastupdated"]
+4  //*[@id="main-content"]//*[@class="sc-93223220-0 jrqxhV"]//*[@data-testid="card-media"]
+5 -
+6  //*[@id="main-content"]//*[@data-testid="second-grid"]//*[@data-testid="manchester-card"][1]//*[@data-testid="card-metadata-lastupdated"]
+7  //*[@id="main-content"]//*[@data-testid="second-grid"]//*[@data-testid="manchester-card"][4]
+
+css method:
+1  button.sc-d6c9e5b8-3.sc-d6c9e5b8-4.eTbKet.hGNtcn
+2  .sc-f116bf72-1.xECcw
+3  .sc-37dbbdae-1 .sc-c6f6255e-0:first-child .sc-6fba5bd4-1
+4  .sc-9f7cc048-1.ejINiH
+5 -
+6  .sc-37dbbdae-3 .sc-c6f6255e-0:first-child .sc-6fba5bd4-1
+7  .sc-37dbbdae-3 .sc-c6f6255e-0:last-child.sc-c6f6255e-0
+
+
+
+
+

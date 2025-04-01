@@ -20,16 +20,20 @@ describe('API test', () => {
         })
     })
 
-    it('should PUT {id} ', async () => {
+    it('should be status 200 PUT {id}', async () => {
         await expect(responsePut.status).to.equal(200);
     })
 
-    it('should PUT {id} book ', async () => {
+    it('should be valid json schema', async () => {
         const result = await validator.validate(responsePut.data, booksSchema);
         await expect(result.valid).to.equal(true);
     })
-    it('should get error with missing required field', async () => {
-        const result = await validator.validate(responsePut.data, booksSchema);
-        await expect(result.valid).to.equal(false);
-    });
-})
+    it('should be the status 404 with wong url', async () => {
+        try {
+            await axios.get('https://fakerestapi.azurewebsites.net/api/v1/Booksss')
+        } catch (error) {
+            await expect(error.status).to.equal(404);
+        }
+
+    })
+});

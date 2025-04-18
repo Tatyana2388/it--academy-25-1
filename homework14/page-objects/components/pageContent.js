@@ -12,7 +12,7 @@ class PageContent extends Base {
     }
 
     get packageItem() {
-        return ('#running-the-example-test');
+        return ('h2.anchorWithStickyNavbar_LWe7');
     }
 
     async goToNextPage() {
@@ -21,10 +21,18 @@ class PageContent extends Base {
         await this.page.locator(this.nextItem).click();
     }
 
-    async goToPackage(text) {
-        await expect(this.page.locator(this.packageItem).filter({hasText: text}).filter('h2')).toBeVisible();
-
+    async getSectionHeader(text) {
+        return this.page.locator(this.packageItem).filter({hasText: text});
     }
+
+    async getTabsContainer(section) {
+        return await section.locator('+ p + .tabs-container');
+    }
+
+    async clickTabsItem(tabs, tabText) {
+        return await tabs.locator('.tabs li.tabItem_LNqP').filter({hasText: tabText}).click();
+    }
+
 }
 
 export {PageContent};

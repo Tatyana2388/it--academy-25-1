@@ -30,7 +30,7 @@ class Navigation extends Base{
         await this.page.locator(this.searchButton).isVisible();
         await this.page.locator(this.searchButton).click();
         await this.page.locator(this.searchField).isVisible();
-        await this.page.locator(this.searchField).fill('');
+        await this.page.locator(this.searchField).fill(searchValue);
         await this.page.locator(this.searchField).isVisible();
     }
 }

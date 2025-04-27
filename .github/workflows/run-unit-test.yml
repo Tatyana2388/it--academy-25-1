@@ -16,8 +16,8 @@ jobs:
       - name: checkout
         uses: actions/checkout@v3
       - name: Install Dependencies
-        working-directory: ./homework09
+        working-directory: ./homework09/mocha
         run:  npm install
       - name: Run Integration Test
-        working-directory: ./homework09
+        working-directory: ./homework09/mocha
         run: npm run test

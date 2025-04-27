@@ -11,7 +11,7 @@ pipeline {
 
         stage('Dependencies') {
             steps {
-                dir('homework09') {
+                dir('homework09/mocha') {
                     bat "npm i"
                 }
             }
@@ -19,7 +19,7 @@ pipeline {
 
         stage('Tests') {
             steps {
-                dir('homework09') {
+                dir('homework09/mocha') {
                     bat "npm run test"
                 }
             }

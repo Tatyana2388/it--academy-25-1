@@ -1,0 +1,28 @@
+pipeline {
+    agent any
+
+    stages {
+
+        stage('Checkout') {
+            steps {
+                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/Tatyana2388/it--academy-25-1.git']])
+            }
+        }
+
+        stage('Dependencies') {
+            steps {
+                dir('homework09') {
+                    bat "npm i"
+                }
+            }
+        }
+
+        stage('Tests') {
+            steps {
+                dir('homework09') {
+                    bat "npm run test"
+                }
+            }
+        }
+    }
+}

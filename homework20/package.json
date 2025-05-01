@@ -1,0 +1,16 @@
+{
+  "name": "homework20",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "tsc && node build/task"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}

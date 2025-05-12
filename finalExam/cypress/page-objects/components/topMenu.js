@@ -92,7 +92,7 @@ class TopMenu extends Base{
         return cy.get('._root_x4h89_2._root_aroml_2._secondaryLabel_aroml_13')
     }
     get deleteGoodsButton() {
-        return cy.get('.x-button x-button_borderlessPrimary x-button_24 _root_unp9l_15')
+        return cy.get('.x-button.x-button_borderlessPrimary.x-button_24._root_unp9l_15')
     }
     get deleteConfirmButton() {
         return cy.get('.x-button.x-button_primaryFilledWeb7184.x-button_32.x-button_intrinsic-width._actionButton_4stt4_7')
@@ -122,8 +122,8 @@ class TopMenu extends Base{
         return cy.get('._titleText_1s7by_15')
      }
      get filterItem() {
-        return cy.get('#MP002XW0SSWN > .x-product-card__link > .x-product-card-description > ._customTags_fofh3_16 > ._tag_d2m9d_2')
-     }
+        return cy.get('#RTLAEI293201 > .x-product-card__link > .x-product-card-description > ._customTags_fofh3_16 > ._tag_d2m9d_2')
+    }
     getToAddToBasket(){
         this.menItem.click()
         this.topMenuMenClothesItem.click()

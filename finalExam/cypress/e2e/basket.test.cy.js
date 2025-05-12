@@ -42,6 +42,7 @@ describe('Lamoda basket test', () => {
     it('should be working the continue shopping button', () => {
         topMenu.getToAddToBasket()
         topMenu.continueShoppingButton.click()
+        topMenu.menItem.should('be.visible')
     })
 
 })
